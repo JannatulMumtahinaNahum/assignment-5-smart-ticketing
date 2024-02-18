@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Assignment 5 Smart Ticketing</title>
+<!-- Daisy UI & Tailwind -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Tailwind custom colors -->
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primaryColor: '#030712',
+            secondColor: '#030712B3',
+            thirdColor: '#1DD100'
+          }
+        }
+      }
+    }
+    </script>
+
 </head>
 <body>
-    
+    <!-- header section -->
+    <header class="mx-auto container font-raleway">
+        <!-- Navbar -->
+        <div class="navbar py-7">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="text-2xl lg:text-4xl font-extrabold text-primaryColor"> P-Ticket </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-secondColor text-xl font-medium relative lg:right-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end w-[100px] btn border-solid bg-[#1DD1001A] border-[#1DD10066]  relative left-14 lg:left-56 justify-center">
+                <p class="flex justify-center items-center gap-2 text-thirdColor font-bold"> Bus <span><img src="images/bus-icon.png" alt=""></span></p>
+            </div>
+          </div>
+
+<!-- Banner section -->
+        <div>
+            
+        </div>
+    </header>
 </body>
 </html>
