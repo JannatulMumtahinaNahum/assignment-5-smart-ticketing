@@ -17,7 +17,7 @@ for(const seat of seats){
         //  4 seat select then button disabled
         if(selectedSeat === 4){
             for (const selectButton of seats){
-                selectButton.setAttribute('disabled' , true);
+                selectButton.setAttribute('disabled');
             }
         }
 
