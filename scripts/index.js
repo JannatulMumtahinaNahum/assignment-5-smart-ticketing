@@ -5,11 +5,10 @@ let seatCount = 1;
 let totalSeatPrice = 0;
 
 
-
 for(const seat of seats){
     seat.addEventListener('click' , function(elementId){
-
-        seat.classList.add('bg-thirdColor');
+        seat.style.color ='#FFFFFF';
+        seat.style.backgroundColor = '#1DD100';
         seat.setAttribute('disabled' , true)
 
         selectedSeat = selectedSeat + 1;
