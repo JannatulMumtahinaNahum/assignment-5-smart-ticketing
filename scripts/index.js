@@ -10,6 +10,7 @@ for(const seat of seats){
     seat.addEventListener('click' , function(elementId){
 
         seat.classList.add('bg-thirdColor');
+        seat.setAttribute('disabled' , true)
 
         selectedSeat = selectedSeat + 1;
         availableSeats -= 1;
@@ -20,7 +21,6 @@ for(const seat of seats){
                 selectButton.setAttribute('disabled' , true);
             }
         }
-
         // per ticket Price
         const nameOfSeats = elementId.target.innerText;
         const economyClass = 'Economy';
@@ -93,9 +93,10 @@ discount.addEventListener('click' , function() {
             
         }
     }
-        else{
+         else{
             alert('You have to book 4 seats , Unless you will not get discount')
         }
+        
 
 })
 

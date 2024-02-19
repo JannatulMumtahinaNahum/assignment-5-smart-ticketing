@@ -11,12 +11,12 @@
 
 .seats button,
 .driver-seat {
-
+    
     max-width: 100px;
     border-radius: 10px;
 }
 
-.price-calcultor-container li {
+.price-calculator li {
     display: flex;
     justify-content: space-between;
 }
