@@ -7,3 +7,21 @@
 .font-inter{
     font-family: "Inter", sans-serif;
 }
+
+
+.seats button,
+.driver-seat {
+
+    max-width: 100px;
+    border-radius: 10px;
+}
+
+.price-calcultor-container li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seats button,
+.seats div {
+    padding: 10px;
+}
